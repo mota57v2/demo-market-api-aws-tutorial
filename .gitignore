@@ -1,0 +1,5 @@
+venv
+.venv
+.env
+__pycache__/
+market-key-ec2.pem
