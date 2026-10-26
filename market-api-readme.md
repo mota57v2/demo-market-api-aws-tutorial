@@ -17,6 +17,27 @@ python app.py
 ssh -i "<path-my-key.pem>" ec2-user@<your-instance-public-dns>
 
 
+
+## Reload systemd configuration
+sudo systemctl daemon-reload
+
+## Start the service
+sudo systemctl start myapi
+
+## Enable automatic start on boot
+sudo systemctl enable myapi
+
+## Check service status
+sudo systemctl status myapi
+
+## View logs
+sudo journalctl -u myapi -f
+
+
+
+
+# Containers
+
 ## create repo
 aws ecr create-repository --repository-name market-repo --region us-east-1
 
